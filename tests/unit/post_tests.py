@@ -5,7 +5,7 @@ from post import Post
 #each function has to start with 'test_'
 
 class PostTests(TestCase):
-    #testing post creation:
+    #Testing post creation:
     def test_create_post(self):
         #create a new post (object):
         new_post = Post("Test Title", "Test Content")

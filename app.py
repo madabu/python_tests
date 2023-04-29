@@ -84,7 +84,7 @@ def print_post(post):
 
 def ask_create_post():
     blog_name = input("Enter the title of the blog you'd like to post in, please: ") #first side effect
-    blog_title = input("Enter the title of your post: ") #second side effect
-    blog_content = input("Enter the content of your post: ") #third side effect
+    post_title = input("Enter the title of your post: ") #second side effect
+    post_content = input("Enter the content of your post: ") #third side effect
 
-    blogs[blog_name].create_post(blog_title, blog_content)
+    blogs[blog_name].create_post(post_title, post_content)
