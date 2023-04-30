@@ -12,7 +12,7 @@ class AppTest(TestCase):
     #in other words,
     #we are testing if the menu prompt shows up when we call the app.menu function
     def test_menu_prints_prompt(self):
-        with patch('builtins.input') as mocked_input:
+        with patch('builtins.input', return_value = 'q') as mocked_input:
             app.menu()
             mocked_input.assert_called_with(app.MENU_PROMPT)
 
